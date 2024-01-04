@@ -1,0 +1,43 @@
+/* Make all links lose opacity on hover, to show they're clickable */
+a:hover {
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+/* Limit the height of the mastodon feed and make it scrollable */
+.include-mastodon-feed {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+/* In the navigation part of the header, highlight the current page in bold, and the current page's parent -- if there's one -- by underlining it */
+.wp-block-navigation-item.current-menu-item > a {
+    font-weight: bold;
+}
+
+.wp-block-navigation-item.current-menu-ancestor > a {
+    text-decoration: underline;
+}
+
+/* Style the table of contents to match the sidebar's color */
+#ez-toc-container {
+    background: #FFFFFF00 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Style headings with a color gradient */
+.wp-block-heading {
+    background: linear-gradient(298deg,#F7B733 0%, #FC4A1A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.uagb-image-heading a {
+    color: #5f6065;
+}
+
+.wp-block-uagb-image--layout-overlay__color-wrapper {
+    background: #ffffff !important;
+    opacity: 0.7;
+}
